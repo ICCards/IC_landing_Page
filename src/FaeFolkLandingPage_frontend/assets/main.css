@@ -1,37 +1,110 @@
 body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
+    background-color: black;
+}
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
+.trailer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    margin-top: 20px;
+}
+
+@media screen
+  and (max-device-width: 800px){
+    .trailer-mobile {
+        width: 90% !important;
+    }
+    .title-mobile{ 
+        width: 90% !important;
+    }
+
+    .background-mobile {
+        width: 100vw !important;
+        height: 100vh !important;
+        object-fit: cover !important;
+        position: fixed !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        z-index: -1 !important;
+    }
+    
+
+}
+
+.title{ 
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 500px;
+}
+
+.icons{
+    color: white;
+    margin-top: 10px;
+}
+
+.icon-list{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list-item {
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #f19c4d;
+    border-radius: 20%;
+    margin-right: 3px;
+}
+
+.playButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 300px;
+    height: 80px;
+    font-family: 'VT323', monospace;
+    font-size: 30pt;
+    color: white;
+    background-color: #f4bc59;
+    border-color: #f18b2c;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.emergency-download {
+    background-color: white;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: #f4bc59;
+    border-color: #f18b2c;
+    color: white;
     margin: auto;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
-}
-
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
-    float: right;
-}
-
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
-}
-
-#greeting:empty {
+    margin-top: 30px;
+    width: 300px;
     display: none;
+    font-family: 'VT323', monospace;
+    font-size: 20pt;
 }

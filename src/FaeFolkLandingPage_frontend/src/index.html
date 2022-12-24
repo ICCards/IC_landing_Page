@@ -3,22 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>FaeFolkLandingPage</title>
+    <title>FaeFolk</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"/>
+    <meta name="description" content="FaeFolk is a multiplayer, slice of life, NFT role-playing game where you use your NFTs to craft tools, equipment, and train your skills
+    ."/>
+    <meta name="robots" content="index, follow" />
+    <meta property="og:image"  content="https://faefolk.nyc3.cdn.digitaloceanspaces.com/Media/Images/logo.png"/>
+    <meta name="twitter:image" content="https://faefolk.nyc3.cdn.digitaloceanspaces.com/Media/Images/logo.png"/>
   </head>
   <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+    <img class="title title-mobile" src="text_logo.png" />
+    <div class="icon-list">
+      <a class="list-item list-item-mobile" href="https://twitter.com/_faefolk">
+        <i class="fa-brands fa-twitter fa-2x icons"></i>
+      </a>
+      <a class="list-item list-item-mobile" href="https://discord.gg/Fe5qYRZrGp">
+        <i class="fa-brands fa-discord fa-2x icons"></i>
+      </a>
+      <a class="list-item list-item-mobile" href="https://medium.com/faefolk/what-is-faefolk-80590ec02a0a">
+        <i class="fab fa-medium fa-2x icons"></i>
+      </a>
+    </div>
+    <video class="trailer trailer-mobile" controls autoplay="false">
+      <source src="https://faefolk.nyc3.cdn.digitaloceanspaces.com/Media/Videos/cave.mp4" type="video/mp4"/>
+    </video>
+    <div id="dialog" class="emergency-download">
+      <i style="color: red;" class="fa-sharp fa-solid fa-circle-exclamation"></i>
+      <span>Danger</span>
+      <p>Unable to detect operating system automatically, Click to download</p>
+      <ul>
+        <li>
+          <a href="https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.dmg">Apple</a>
+        </li>
+        <li>
+          <a href="https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.exe">Windows</a>
+        </li>
+        <li>
+          <a href="https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.x86_64">Linux</a>
+        </li>
+
+      </ul>
+    </div>
+    <div id="dialog2" class="emergency-download">
+      <i style="color: red;" class="fa-sharp fa-solid fa-circle-exclamation"></i>
+      <span>Danger</span>
+      <p>Mobile deviced not supported</p>
+    </div>
+    <button id="playButton" class="playButton">Play Now <i class="fa-solid fa-gamepad"></i></button>
+
+    <video class="background background-mobile" playsinline autoplay muted loop poster="cover.svg" id="bgvid">
+      <source src="background.webm" type="video/webm">
+    </video>
+
   </body>
 </html>

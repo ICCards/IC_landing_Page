@@ -1,13 +1,6 @@
 {
   "canisters": {
-    "FaeFolkLandingPage_backend": {
-      "main": "src/FaeFolkLandingPage_backend/main.mo",
-      "type": "motoko"
-    },
     "FaeFolkLandingPage_frontend": {
-      "dependencies": [
-        "FaeFolkLandingPage_backend"
-      ],
       "frontend": {
         "entrypoint": "src/FaeFolkLandingPage_frontend/src/index.html"
       },
