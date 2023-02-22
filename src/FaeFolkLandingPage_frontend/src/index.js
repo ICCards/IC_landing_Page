@@ -2,7 +2,7 @@ const mac_build = "https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.dmg";
 const windows_build = "https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.exe";
 const linux_build = "https://faefolk.nyc3.cdn.digitaloceanspaces.com/faefolk.x86_64";
 document.querySelector(".playButton").addEventListener("click", async (e) => {
-  let OSName = "Unknown OS";
+  /*let OSName = "Unknown OS";
   if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
   if (navigator.userAgent.indexOf("Mac") != -1) OSName = "Macintosh";
   if (navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
@@ -25,7 +25,8 @@ document.querySelector(".playButton").addEventListener("click", async (e) => {
       document.getElementById("dialog").style.display = "block"
   }
 
-  return false;
+  return false;*/
+  window.open("https://twitter.com/_faefolk/status/1606461094171709442?s=46&t=cGMt2f9MfP4PSr-U1shbyg")
 });
 
 
@@ -34,6 +35,7 @@ function download(dataurl, ext) {
   link.href = dataurl;
   link.download = `faefolk.${ext}`;
   link.click();
+  
 }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
